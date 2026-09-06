@@ -52,7 +52,7 @@ export function Hero() {
       >
         <div className="mx-auto flex max-w-[1800px] items-center px-6 py-5">
           <a href="/" className="inline-block opacity-90 transition-opacity duration-300 hover:opacity-60">
-            <img src={logo} alt="Dottis" width={1038} height={357} className="h-9 w-auto md:h-11" />
+            <img src={logo} alt="Dotis" width={1038} height={357} className="h-9 w-auto md:h-11" />
           </a>
         </div>
       </motion.header>
@@ -94,7 +94,7 @@ export function Hero() {
 
           <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.9, ease }} className="mt-9">
             <a href="#install" data-cursor-hover className="download-button group inline-flex items-center gap-4 overflow-hidden rounded-full bg-ink py-4 pl-9 pr-4 text-lg font-medium text-paper">
-              <span className="relative z-10">Install Dottis</span>
+              <span className="relative z-10">Install Dotis</span>
               <span className="relative z-10 grid h-10 w-10 place-items-center overflow-hidden rounded-full bg-flare">
                 <Download className="download-icon h-5 w-5 text-paper" />
               </span>
