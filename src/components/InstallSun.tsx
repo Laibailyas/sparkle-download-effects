@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useMotionValueEvent, useScroll } from "motion/react";
+import { motion, useMotionValue, useMotionValueEvent, useScroll, useTransform } from "motion/react";
 import { useEffect, type RefObject } from "react";
 import { Download } from "lucide-react";
 
@@ -36,6 +36,7 @@ export function InstallSun({ anchorRef }: { anchorRef: RefObject<HTMLElement | n
   const badgeOpacity = useMotionValue(0);
   const textOpacity = useMotionValue(0);
   const iconOpacity = useMotionValue(1);
+  const fontSize = useTransform(size, (s) => s * 0.11);
 
   const update = (sy: number) => {
     const el = anchorRef.current;
@@ -81,7 +82,7 @@ export function InstallSun({ anchorRef }: { anchorRef: RefObject<HTMLElement | n
         <Download className="h-1/2 w-1/2 text-paper" />
       </motion.span>
       <motion.span
-        style={{ opacity: textOpacity, fontSize: "calc(var(--sun-size, 40px) * 0.1)" }}
+        style={{ opacity: textOpacity, fontSize }}
         className="install-sun-text absolute inset-0 grid place-items-center text-center font-display leading-[1.05] tracking-wide text-ink"
       >
         Install
