@@ -40,9 +40,9 @@ export function CustomCursor() {
       <motion.img
         src={cursorUrl}
         alt=""
-        width={84}
+        width={60}
         height={93}
-        className="block w-[84px] origin-top-left"
+        className="block w-[60px] origin-top-left"
         animate={{ scale: active ? 1.12 : 1, rotate: active ? -5 : 0 }}
         transition={{ duration: 0.2, ease: "easeOut" }}
       />
