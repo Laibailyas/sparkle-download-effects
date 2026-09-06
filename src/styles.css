@@ -223,6 +223,10 @@
   animation: download-drop 850ms ease-in-out infinite;
 }
 
+.download-sun { transition: transform 400ms ease; }
+.download-button:hover .download-sun { transform: rotate(25deg); }
+.install-sun { will-change: transform, width, height; }
+
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee,
   .download-button:hover .download-shine,
